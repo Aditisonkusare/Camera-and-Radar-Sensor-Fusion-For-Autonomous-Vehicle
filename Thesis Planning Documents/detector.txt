@@ -1,0 +1,16 @@
+detector:
+
+yolo: object detection
+
+
+radar: distance Correct
+angular wrong
+
+camera: angular correct
+distance wrong
+
+
+combine depth information**
+
+process:
+early fusion

@@ -1,0 +1,230 @@
+STRUCTURE FOR CAPSTONE: DEADLINE 03.08.2023 
+
+-1 abstract
+In recent years, autonomous vehicles and Advanced driver-assistance systems (ADAS) have received a lot of attention. These systems rely significantly on sensor data to detect and comprehend their surroundings. Sensor fusion is essential for improving perception, object detection, tracking, and prediction capabilities by merging data from cameras, radar, and lidar sensors. The developments in camera, radar, and lidar sensor fusion technologies for forecasting radar key points are the emphasis of this thesis.
+
+-2 introduction
+	The safe navigation of autonomous vehicles in the upcoming era depends on their ability to accurately
+perceive the environment. This is accomplished by fusing various sensors using camera-radar to create
+a comprehensive picture of the environment. In order to improve accuracy and dependability, sensor
+fusion involves combining data from various sensors. This fusion is essential for autonomous vehicles
+because decisions are made in nanoseconds based on sensor input. In order for these vehicles to
+perceive and make decisions in real time, sensor fusion is essential. The main sensors are cameras and
+radar, and their combination provides increased dependability, accuracy, and a thorough
+understanding of the environment. Radar provides distance, velocity, and angle information for
+obstacle detection and motion prediction, while cameras provide high-resolution images and colour
+information to aid in object recognition and road sign identification. From a distance of 0 to 25
+metres, radar can detect obstacle and its key points, and a camera can further compare those key
+points with those discovered by radar. Sensor fusion enables autonomous vehicles to obtain a
+complete and accurate view of their surroundings, even in difficult circumstances, by making up for
+the shortcomings of individual sensors.
+
+-3 BACKGROUND SENSORS IN AUTONOMOUS VEHICLES:
+	3.1 SINGLE SENSORS
+		CAMERA
+		LIDAR
+		RADAR
+	3.2 SENSOR FUSION 
+		CAMERA LIDAR
+		CAMERA RADAR
+
+-4 literature review*: minimum 5 papers in detail - HOW MY PROBLEM DIFFERES FROM OTHER PAPERS / PROBLEM:
+
+*4.1. problems (find other papers closely related)
+
+*4.2. similar problems in different domains (differ papers details - problem different data / domain)
+	Sensor fusion of camera and radar can take place in various domains, including:
+4.2.1 Autonomous Vehicles: Camera and radar sensor fusion is widely used in autonomous vehicles for perception and object detection. Cameras provide high-resolution visual information, while radars offer accurate distance and velocity measurements. Combining data from both sensors enhances the robustness and reliability of object detection and tracking systems.
+4.2.2 Robotics: Camera and radar fusion is valuable in robotics applications for environment perception, obstacle avoidance, and mapping. By combining the strengths of camera vision (object recognition, color detection) and radar (distance measurement, robustness in adverse weather conditions), robots can navigate and interact with their surroundings more effectively.
+4.2.3 Surveillance and Security: Integrating camera and radar sensors in surveillance systems enables comprehensive monitoring of large areas. Cameras provide visual identification and recognition, while radars can detect and track objects even in low visibility conditions. Sensor fusion enhances the accuracy and reliability of intrusion detection, object tracking, and perimeter security.
+4.2.4 Industrial Automation: In industrial settings, sensor fusion of cameras and radars can be used for object detection, tracking, and monitoring in manufacturing processes. For example, it can assist in quality control, detecting defects, and ensuring safe operation of machinery.
+4.2.5 Traffic Management: Integrating camera and radar data in traffic management systems improves road safety, congestion detection, and traffic flow optimization. Cameras capture visual information such as vehicle types, license plates, and traffic signs, while radars provide real-time data on vehicle speed, distance, and presence. Sensor fusion enables more accurate analysis and decision-making for traffic control.
+4.2.6 Augmented Reality (AR) and Virtual Reality (VR): Combining camera and radar data can enhance the immersive experience in AR and VR applications. Cameras capture the visual surroundings, while radars can provide depth information, enabling realistic virtual object placement and interaction with the physical environment.
+
+4.3. algorithms and mechanisms: used not in fusion but are good (follows point 6) not necessary in PP
+		traditional sensor fusion techniques -> Kalman filtering and Bayesian methods
+(COMBINE 3 AND 4 - DEPENDS)
+
+-5 problem definitation : input - radar-camera, challenges, objectives, achieve this, output, vector, matrix
+6 proposed approach: modified algorithms (details point 2) 
+7 experimental setup: 
+	1. dataset
+	2. other algorithms comparison
+	3. environment and parameters: metrics, parameters used in algorithms
+	4. what metrics used to compare the results based on what ? accuracy etc. -> formulas
+--------------------------------------------------------------------------------------------------------------------
+8 results and discussion:
+9 conclusion:
+10 references:
+
+--------------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
+*4.1.(find other papers closely related):-
+4.1. 
+(https://chat.openai.com/share/33034851-5118-411a-820e-7c87345799c3) :- Rough
+4.1.1 Sensor Modalities: Every sensor modality has its own set of features and capabilities:
+a. Cameras capture detailed visual information like as color, texture, and shape, allowing for accurate object recognition and classification.
+b. Radar sensors use radio waves to calculate object distance, velocity, and angle. They are especially effective in bad weather and for long-range detection. 
+4.1.2 Sensor Fusion Techniques: 
+In ADAS, traditional sensor fusion techniques like as Kalman filtering and Bayesian methods are widely employed. Kalman filtering estimates the status of things and predicts their future behavior by combining sensor measurements with a dynamic model. Bayesian approaches employ probabilistic models to combine sensor data and more correctly determine object states. These strategies lay the groundwork for sensor fusion, although they may have limits in more complex settings.
+4.1.3 Deep Learning Fusion:
+Deep learning techniques like convolutional neural networks (CNNs) and recurrent neural networks (RNNs) have shown significant promise for sensor fusion. These models can learn to extract useful elements from camera, radar, and lidar data and combine them for better object detection, tracking, and prediction. Deep learning-based fusion techniques take advantage of neural network strengths to handle complicated, high-dimensional sensor data with greater accuracy.
+4.1.4 Calibration and Synchronization: Accurate sensor calibration is critical for effective sensor fusion. Intrinsic calibration entails determining each sensor's inherent properties, such as focal length and distortion coefficients. Extrinsic calibration determines the sensors' relative position and orientation in a shared coordinate system. Temporal alignment and synchronization guarantee that data from many sensors is properly aligned in time, allowing for accurate fusion.
+4.1.5 Object Detection and Tracking:
+Sensor Fusion allows for robust object detection and tracking by merging information from cameras, radar, and lidar sensors. Cameras give detailed visual information, allowing for exact object recognition and classification. Radar sensors measure distance, velocity, and angle, which aids in long-range detection and tracking, particularly in inclement weather.
+4.1.6 Radar Key Point Prediction:
+Radar key point prediction refers to the estimation and prediction of specific qualities or attributes that are required for radar-based prediction activities. Sensor fusion improves radar critical point prediction by combining the complementary skills of cameras, radar, and lidar. The system may acquire a more thorough picture of the environment by fusing data from many sensors, allowing for more accurate predictions.
+
+Papers:
+4.1. Sensor Fusion-Based Vehicle Detection and Tracking Using a Single Camera and Radar at a Traffic Intersection by Shenglin Li and Hwan-Sik Yoon
+Special Issue
+Advances in Intelligent Transportation Systems Based Sensor Fusion
+
+(https://www.mdpi.com/1424-8220/23/10/4888) :- sensor fusion algorithm -> Kalman filter
+- Sensor Fusion Algorithm: The proposed sensor fusion algorithm consists of three main steps: vehicle motion estimation, data association, and vehicle tracking
+- KALMAN FILTER: The Kalman filter goes through two basic steps: prediction and update, which are executed iteratively as fresh measurements become available.
+- Cameras and radar sensors have various strengths and drawbacks in terms of detection accuracy, detection range, and environmental robustness. Vision-based sensors, such as cameras, are extremely successful at detecting and recognizing objects from up to 100 meters away. However, beyond this range, camera performance steadily diminishes, and accurate object detection becomes almost impossible at distances greater than 150 m. Radar sensors, on the other hand, can offer longer-distance measurements and are well-known for their resilience in low-light and poor weather circumstances. While radar sensors may be influenced by uncommon environmental events such as lightning, their performance under difficult conditions is often more reliable than cameras. To take advantage of the advantages of both types of sensors, the camera and radar sensors execute object identification and classification independently, and the results are integrated using a fusion method.
+- Object recognition using cameras is widely employed in a variety of fields, including autonomous driving, transportation, robotics, and even medicine. Using an object detection algorithm, numerous features of objects can be detected based on photos taken by camera. You only look once (YOLO) is a well-known object detection method. YOLO detects objects as a regression issue using a unique convolutional neural network, darknet framework, and delivers class probabilities for the observed objects in a single run. Detected objects are thus displayed in a rectangular box to indicate the kind, size, and location of the objects. YOLO has great accuracy and rapid processing speed when compared to other methods such as single shot multi-box detector (SSD), Faster-RCNN, Mask-RCNN, and CenterNet. YOLO can construct a bounding box for each detected car in a picture, allowing the position of several vehicles in the scene to be estimated.
+
+2. Research Article
+Evaluating Multiple Object Tracking Performance:
+The CLEAR MOT Metrics
+Keni Bernardin and Rainer Stiefelhagen
+Interactive Systems Lab, Institut fur Theoretische Informatik, Universit ¨ at Karlsruhe, 76131 Karlsruhe, Germany
+(https://link.springer.com/content/pdf/10.1155/2008/246309.pdf):- 
+2.1 Evaluation metrics:
+The multiple object tracking precision (MOPT)
+MOTP assesses an object tracking algorithm's localisation precision. It computes the average distance between the tracked items' expected positions and their corresponding ground truth positions.
+The following formula is used to determine MOTP:
+MOTP = (sum of anticipated and ground truth position distances) / (total number of accurately tracked objects)
+A lower MOTP score indicates higher precision because the algorithm's projected positions are closer to the ground truth positions. A perfect MOTP score of 0 shows that the projected and ground truth positions are identical. In short, MOTA assesses total tracking accuracy, taking into account false positives, false negatives, and identity swaps, whereas MOTP focuses primarily on object localisation precision. 
+These metrics assist researchers and developers in evaluating and comparing the performance of various object tracking methods.
+A greater MOTA score denotes improved tracking accuracy. A flawless MOTA score of 1 implies that the algorithm tracked all objects correctly and without errors.
+2.2 The multiple object tracking accuracy (MOTA): MOTA assesses an object tracking algorithm's overall accuracy by taking into account several criteria such as false positives, false negatives, and identity swaps. It considers how well an algorithm finds and tracks objects in a video clip.
+The following formula is used to determine MOTA:
+MOTA = 1 - (total number of ground truth objects minus the sum of false positives, false negatives, and identity switches)
+	Summing up over the different error ratios gives us the total error rate. MOPT and MOTA are traditional techniques
+
+3. (https://arxiv.org/pdf/1903.11027.pdf) NUSCENES PAPER:- nuScenes: A multimodal dataset for autonomous driving, Holger Caesar, Varun Bankiti, Alex H. Lang, Sourabh Vora, Venice Erin Liong, Qiang Xu,
+Anush Krishnan, Yu Pan, Giancarlo Baldan, Oscar Beijbom
+nuTonomy: an APTIV company
+nuscenes@nutonomy.com
+- AMOTA: 
+AMOTA is a MOTA extension that computes the average tracking accuracy over many video sequences. It provides a more comprehensive evaluation of the performance of an object tracking method by taking into account its consistency across different contexts.
+AMOTA is produced by first calculating MOTA for each individual video sequence, and then taking the average of these MOTA values across all sequences.
+(sum of MOTA scores for all video sequences) / total number of video sequences = AMOTA
+AMOTA aids in evaluating an algorithm's overall performance across various tracking settings. A greater AMOTA number suggests more accurate tracking across numerous sequences.
+- AMOTP:
+AMOTP (Average Multi Object Tracking Precision): Like AMOTA, AMOTP computes the average tracking precision across numerous video sequences. It considers an algorithm's tracking precision consistency across diverse contexts.
+AMOTP is calculated by first calculating MOTP for each individual video sequence, and then taking the average of these MOTP values across all sequences.
+AMOTP = (sum of all video sequence MOTP scores) / total number of video sequences
+AMOTP is a measure of an algorithm's average localization precision across multiple sequences. A lower AMOTP score indicates more precision in many settings.
+- SMOTA:
+Smoothed MOTA (sMOTA) is an upgraded variant of MOTA that takes into account the temporal continuity of object tracking. It addresses MOTA's sensitivity to rapid changes in tracking performance between consecutive frames.
+sMOTA computes a smoother version of MOTA by taking prior frame tracking performance into consideration. It punishes unexpected changes in false positives, false negatives, and identity shifts.
+sMOTA contributes to a more steady and consistent assessment of an algorithm's tracking accuracy over time. It is especially beneficial for examining algorithm performance in videos with demanding circumstances or fast changing surroundings.
+
+In summary, AMOTA and AMOTP extend tracking algorithm evaluation across numerous video sequences, offering an average measure of accuracy and precision across various contexts. sMOTA, on the other hand, is concerned with addressing the problem of abrupt changes in tracking performance by including temporal continuity into the evaluation. These measurements contribute to a more complete knowledge of the performance of various object tracking techniques.
+
+- Track initialization duration (TID):
+TID is the time it takes an algorithm to establish a track after an object enters the scene or reappears after being temporarily occluded. It measures the efficiency of the track initialization procedure, which is critical for tracking objects accurately from the start.
+TID is commonly expressed as the number of frames required for an algorithm to successfully initialize a track. A shorter TID indicates that track initiation will be faster and more efficient. A longer TID, on the other hand, indicates a slower or less effective track initialization process. TID reduction is significant because it reduces the time it takes to recognize and track items as they enter or return in the scene. Fast track initialization allows the algorithm to begin tracking objects quickly, resulting in provide more accurate and trustworthy tracking outcomes.
+- Longest gap duration (LGD):
+The longest temporal interval between two consecutive detections of the same item in a video clip is measured by LGD. It measures an object tracking algorithm's ability to keep tracking during extended periods of occlusion or when objects temporarily disappear from the scene.
+LGD is calculated by counting the number of frames that indicate the length of the longest gap. A lower LGD value implies higher temporal continuity, implying that the system can efficiently sustain tracking even when objects are occluded or briefly not visible.
+An approach can assure robust tracking performance in circumstances with occlusions, object interactions, or other problems that cause occasional disappearance by minimizing LGD. The capacity to bridge vast temporal gaps helps to produce trustworthy and accurate tracking results.
+
+TID and LGD are both significant parameters to examine when comparing the performance of various object tracking systems. For accurate and dependable object tracking in a variety of real-world circumstances, efficient track initialization (short TID) and robust temporal continuity (small LGD) are critical.
+
+4. https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8612054 
+Sensors and Sensor Fusion in Autonomous
+Vehicles
+Jelena Kocić, Nenad Jovičić, and Vujo Drndarević :- Sensors in Autonomous vehicles
+
+***5. https://www.mdpi.com/1424-8220/21/6/2140 
+Sensor and Sensor Fusion Technology in Autonomous Vehicles: A Review
+by De Jong Yeong, Gustavo Velasco-Hernandez, John Barry and Joseph Walsh:- Sensor technology, sensor fusion algorithms*(4 algorithms) and sensor fusion, challenges,
+
+6. A Review of Data Fusion Techniques
+Federico Castanedo
+D. Ursino, Y. Takama
+https://www.hindawi.com/journals/tswj/2013/704504/ :- Kalman filter, point 4 & 5
+
+7. YOLOv3: An Incremental Improvement
+Joseph Redmon Ali Farhadi
+University of Washington
+https://arxiv.org/pdf/1804.02767.pdf:- Yolov3
+
+8. A DNN-LSTM based Target Tracking Approach using mmWave Radar and Camera Sensor Fusion
+Arindam Sengupta; Feng Jin; Siyang Cao
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9058168:- LSTM, Algo for bounding box, EXPERIMENTAL RESULTS AND DISCUSSION, 
+
+9. Complex-YOLO: An Euler-Region-Proposal for
+Real-time 3D Object Detection on Point Clouds
+Martin Simon†*
+, Stefan Milz†
+, Karl Amende†*
+, Horst-Michael Gross*
+Valeo Schalter und Sensoren GmbH†
+, Ilmenau University of Technology*
+https://openaccess.thecvf.com/content_ECCVW_2018/papers/11129/Simony_Complex-YOLO_An_Euler-Region-Proposal_for_Real-time_	3D_Object_Detection_on_Point_ECCVW_2018_paper.pdf:- YOLO DETAILS
+
+10. Radar and Camera Early Fusion for Vehicle Detection in Advanced Driver Assistance Systems
+Teck-Yian Lim: University of Illinois at Urbana-Champaign
+Urbana, Illinois
+tlim11@illinois.edu, Amin Ansari:Qualcomm Technologies Inc.
+San Diego, California
+amina@qti.qualcomm.com, Bence Major: Qualcomm AI Research∗
+San Diego, California, 
+Daniel Fontijne: Qualcomm AI Research
+San Diego, California
+Daniel Fontijne
+Qualcomm AI Research
+San Diego, California,
+Radhika Gowaikar
+Qualcomm Technologies Inc.
+San Diego, California,
+Sundar Subramanian
+Qualcomm Technologies Inc.
+San Diego, California
+******https://ml4ad.github.io/files/papers/Radar%20and%20Camera%20Early%20Fusion%20for%20Vehicle%20Detection%20in%20Advanced%20Driver%20Assistance%20Systems.pdf*****:-FusionNet Architecture, Experimental Setup
+
+EXTRA PAPERS:
+1. http://ieomsociety.org/IEOM_Orlnado_2015/papers/140.pdf: CAMERA, RADAR MAIN INFORMATION
+http://ieomsociety.org/IEOM_Orlnado_2015/papers/140.pdf
+
+*4.2. similar problems in different domains (differ papers details - problem different data / domain)
+Robotics :-
+
+1.
+https://ieeexplore.ieee.org/abstract/document/9690006?casa_token1zTOOvdyCroAAAAA:lvQOVSQ5T7wWYrobByDyra16Vpt6I3xu1r6xHgq8gAG5m4I78SUGpJhS1FNB6_oL1HkMIbU_CQ :- Radar-Camera Co-Calibration, pseudo code for generating dataset using Radar, YOLOLabel, YOLOBBox, Img, TM* 
+
+2. 
+https://arxiv.org/pdf/2302.06643.pdf : Sensor Setup, Benchmark Datasets, Evaluation Metrics, INPUT-DATA FORMATS, CAMERA-RADAR FUSION*****, Early-Late- Deep
+
+AR AND VR:
+3. https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9241032 - Rough
+
+More Domains:
+Sensor fusion of camera and radar can take place in various domains, including:
+
+Autonomous Vehicles: Camera and radar sensor fusion is widely used in autonomous vehicles for perception and object detection. Cameras provide high-resolution visual information, while radars offer accurate distance and velocity measurements. Combining data from both sensors enhances the robustness and reliability of object detection and tracking systems.
+
+Robotics: Camera and radar fusion is valuable in robotics applications for environment perception, obstacle avoidance, and mapping. By combining the strengths of camera vision (object recognition, color detection) and radar (distance measurement, robustness in adverse weather conditions), robots can navigate and interact with their surroundings more effectively.
+
+Surveillance and Security: Integrating camera and radar sensors in surveillance systems enables comprehensive monitoring of large areas. Cameras provide visual identification and recognition, while radars can detect and track objects even in low visibility conditions. Sensor fusion enhances the accuracy and reliability of intrusion detection, object tracking, and perimeter security.
+
+Industrial Automation: In industrial settings, sensor fusion of cameras and radars can be used for object detection, tracking, and monitoring in manufacturing processes. For example, it can assist in quality control, detecting defects, and ensuring safe operation of machinery.
+
+Traffic Management: Integrating camera and radar data in traffic management systems improves road safety, congestion detection, and traffic flow optimization. Cameras capture visual information such as vehicle types, license plates, and traffic signs, while radars provide real-time data on vehicle speed, distance, and presence. Sensor fusion enables more accurate analysis and decision-making for traffic control.
+
+Augmented Reality (AR) and Virtual Reality (VR): Combining camera and radar data can enhance the immersive experience in AR and VR applications. Cameras capture the visual surroundings, while radars can provide depth information, enabling realistic virtual object placement and interaction with the physical environment.
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+5 problem definition: input - radar-camera, challenges, objectives, achieve this, output, vector, matrix
+

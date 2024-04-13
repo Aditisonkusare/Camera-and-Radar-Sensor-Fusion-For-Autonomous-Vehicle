@@ -1,0 +1,79 @@
+STRUCTURE FOR CAPSTONE: DEADLINE 03.08.2023 
+
+-1 abstract
+-2 introduction
+	1. descriptions: techniques, approach,
+	2. add technical issues
+	3. plan technical
+-3 background*:
+	1. concepts
+	2. fusion of this
+	3. issue needs to be addressed
+-4 literature review*: minimum 5 papers in detail - HOW MY PROBLEM DIFFERES FROM OTHER PAPERS / PROBLEM
+	*1. problems (find other papers closely related)
+	*2. Similar problems in different domains (different papers details - problem different data/domain)
+	3. algorithms and mechanisms: used not in fusion but are good (follows point 6) not necessary in PP
+(COMBINE 3 AND 4 - DEPENDS)
+-5 problem definition: input - radar-camera, challenges, objectives, achieve this, output, vector, matrix
+6 proposed approach: modified algorithms (details point 2)
+7 experimental setup:
+	1. dataset
+	2. other algorithms comparison
+	3. environment and parameters: metrics, parameters used in algorithms
+	4. what metrics are used to compare the results based on what? accuracy etc. -> formulas
+--------------------------------------------------------------------------------------------------------------------
+8 results and discussion:
+9 conclusion:
+10 references:
+
+algorithms describe
+briefing dataset :
+
+
+
+5 problem definition: input - radar-camera, challenges, objectives, achieve this, output, vector, matrix
+->
+1. Problem Definition:
+The problem is to enhance the performance of the Lift Splat Shoot (LSS) model, which likely deals with object detection, tracking, and decision-making in a scenario that involves shooting or targeting. The LSS model may currently utilize only camera data for these tasks, and the goal is to improve its accuracy and robustness by incorporating radar data.
+
+2. Input - Radar-Camera:
+
+The combined input to the integrated model consists of both radar and camera data. Radar data provides information about the distance, velocity, and angle of detected objects, while camera data offers visual information about the environment and objects.
+
+3. Challenges:
+Integrating radar and camera data brings several challenges:
+
+Data Fusion: Combining data from different sensors while accounting for differences in accuracy, resolution, and timing.
+Synchronization: Ensuring that radar and camera data are properly aligned in terms of time and coordinate systems.
+Feature Extraction: Extracting meaningful features from radar data to complement camera-based object detection and tracking.
+Fusion Strategy: Designing a method to effectively fuse the information from radar and camera sources to make better-informed decisions.
+4. Objectives:
+The main objectives of this integration are:
+
+Enhance Accuracy: Improve object detection and tracking accuracy, especially in scenarios with poor lighting or occlusions, by leveraging the complementary information from radar data.
+Improve Robustness: Reduce susceptibility to environmental conditions that may hinder camera-based detection, such as glare or darkness, by using radar data.
+Real-time Integration: Develop a seamless integration strategy that enables real-time decision-making by combining radar and camera data efficiently.
+5. How to Achieve This:
+To achieve these objectives, follow these steps:
+
+Data Preprocessing: Clean and preprocess both radar and camera data to ensure data quality and consistency.
+Feature Extraction: Extract relevant features from radar data, such as object speed, direction, and relative position.
+Sensor Fusion: Implement fusion techniques like Kalman filters, particle filters, or deep learning-based sensor fusion networks to merge radar and camera data.
+Model Enhancement: Modify the existing LSS model to integrate the fused data for improved object detection, tracking, and decision-making.
+6. Output:
+The output of the integrated model will likely include:
+
+Enhanced Object Information: Improved object detection and tracking results that leverage both radar and camera data.
+More Informed Decisions: Better decision-making based on a richer set of inputs, leading to improved targeting or shooting accuracy.
+7. Vector:
+Vectors can represent various aspects of the problem:
+
+Radar Data Vector: A vector containing radar measurements like distance, velocity, and angle for detected objects.
+Camera Data Vector: A vector representing visual features extracted from camera data.
+Fused Data Vector: The combined vector of radar and camera features for input to the integrated model.
+8. Matrix:
+Matrices can be used for more complex data representation:
+
+Sensor Fusion Matrix: A matrix representing the fusion of radar and camera data over time, with rows for different time steps and columns for various data dimensions.
+Feature Matrix: A matrix containing extracted features from both radar and camera data, where each row corresponds to an object and each column represents a specific feature.
+Remember that the specific implementation of the integration will depend on your existing LSS model, the characteristics of the radar and camera data, and the desired outcome. Balancing accuracy, computational complexity, and real-time performance will be crucial in designing an effective integration.

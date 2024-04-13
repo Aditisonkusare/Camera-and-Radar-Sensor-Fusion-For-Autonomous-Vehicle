@@ -1,0 +1,35 @@
+github.com/PurduedigitaltwinRedFormer
+
+od/ s s: 
+image data into world space
+top view
+project into world co-ordinate system
+
+transformer
+
+download github repo
+radar englithen the dark:
+
+trajectory prediction along with segmentation
+
+detection no
+add motion
+how inputs are going to model
+motion forecasting
+
+fisheye point: RANSAC 
+key point detection: 
+
+supervised training
+replacing radar with key point detection
+
+modify loaders
+modify output to moving motion labels
+
+two frames: nvidia 
+cvpr: preprocessing to radar take
+
+radar part to his code: we use geometric model
+
+radar prediction
+

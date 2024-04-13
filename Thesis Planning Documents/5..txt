@@ -1,0 +1,24 @@
+5.
+5.1 our topic is now based on motion ?
+5.2 what would be the simple problem definition?
+5.3 main architecture? based on what to refer.
+5.4 how to train? training process?
+
+6. proposed approach: modified algorithms
+6.1 what algorithms
+6.2 why these algorithms
+6.3 what did each algorithm do
+6.4 what did we achieve from these
+6.5 main idea
+
+7 experimental setup:
+7.1 dataset
+	7.1.1 comparison to other datasets: NuScenes, Oxford Radar RobotCar, MulRan and Astyx
+7.2 other algorithms comparison
+7.3 environment and parameters: metrics, parameters used in algorithms
+7.4 what metrics are used to compare the results based on what? accuracy etc. -> formulas
+7.5 what sensor fusion techniques:
+	7.5.1  
+	7.5.2
+	7.5.3
+	7.5.4 all these together with different approaches for the training shuffling to add content as Ganesh said
